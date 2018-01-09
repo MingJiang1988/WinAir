@@ -264,7 +264,7 @@ void fullScreen()
 				Rect ROI = Rect(0, 0, f_width, f_height);
 				//Mat image;
 				//cv::rotate(frame, frame, ROTATE_90_COUNTERCLOCKWISE);
-				Mat image(rs_height, rs_width, CV_8UC3, Scalar(255, 255, 255));
+				Mat image(rs_height, rs_width, CV_8UC3, Scalar(0, 0, 0));
 				//cv::resize(frame, image, Size(rs_width, rs_height));
 				frame.copyTo(image(ROI));
 				//cv::rotate(image, image, ROTATE_90_CLOCKWISE);
